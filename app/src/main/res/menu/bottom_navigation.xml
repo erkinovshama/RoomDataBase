@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_view"
+        android:title=""
+        android:icon="@drawable/ic_view"
+        />
+
+    <item
+        android:id="@+id/place_holder"
+        android:title=""
+        android:enabled="false"
+        />
+
+    <item
+        android:id="@+id/fragment_add_genre"
+        android:title=""
+        android:icon="@drawable/ic_settings"
+        />
+</menu>

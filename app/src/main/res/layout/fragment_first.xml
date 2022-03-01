@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddBookFragment">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_book_text"
+        android:textColor="#000045"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn" />
+
+    <EditText
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:hint="@string/book_name_hint"
+        android:textSize="22sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/author_hint"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_name"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/book_publication_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/publication_date_hint"
+        android:inputType="date"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:layout_margin="14dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_author"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/book_amount_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_page_hint"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_publication_date"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/book_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_hint"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_amount_page"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <EditText
+        android:id="@+id/book_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/place_hint"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_amount"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Spinner
+        android:id="@+id/genre_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:spinnerMode="dropdown"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_place" />
+
+    <Button
+        android:id="@+id/add_book_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textAllCaps="false"
+        android:text="@string/add_book_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genre_select"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

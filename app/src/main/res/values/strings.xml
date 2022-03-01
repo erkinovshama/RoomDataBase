@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RoomDataBase</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="add_book_btn">Добавить книгу</string>
+    <string name="view_book_btn">Посмотреть книги</string>
+    <string name="book_name_hint">Название книги</string>
+    <string name="author_hint">Автор книги</string>
+    <string name="publication_date_hint">Дата публикации</string>
+    <string name="amount_page_hint">Число страниц</string>
+    <string name="amount_hint">Количество книги</string>
+    <string name="place_hint">Тираж</string>
+    <string name="add_book_text">Страница добавления книги</string>
+    <string name="back_btn">Назад</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_genre">Сохранить</string>
+    <string name="genre_hint">Добавтье жанр</string>
+</resources>
